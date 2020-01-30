@@ -146,11 +146,7 @@ h6 a {
 	margin: 3% auto;
 }
 
-.features_box {
-	width: 45%;
-}
-
-.about_box {
+.above_img_boxes {
 	width: 45%;
 
 }
@@ -159,15 +155,7 @@ h6 a {
 	width: 100%;
 }
 
-.services_box {
-	width: 30%;
-}
-
-.product_box {
-	width: 30%;
-}
-
-.vision_box {
+.below_img_boxes {
 	width: 30%;
 }
 
@@ -244,7 +232,7 @@ ul {
 
 @media (max-width: 800px) {
     header {
-        flex-flow: column-reverse;
+        flex-flow: column-reverse nowrap;
     }
 
     .logo {
@@ -264,3 +252,28 @@ ul {
     }
 }
 
+@media (max-width: 500px) {
+    .nav_line {
+        flex-flow: column nowrap;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .nav_line a {
+        padding: 4% 0;
+        border-bottom: 1px solid gray;
+    }
+
+    .nav_line a:first-child {
+        border-top: 1px solid gray;
+    }
+
+    .above_image, .below_image {
+        flex-flow: column nowrap;
+    }
+
+    .above_img_boxes, .below_img_boxes {
+        width: 100%;
+        margin: 5% 0;
+    }
+}
